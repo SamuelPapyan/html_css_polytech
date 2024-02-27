@@ -9,10 +9,14 @@ a {
 
 h1 {
 	text-align: center;
-	color: white;
 	margin:0;
 	padding:10px;
 	font-size: 80px;
+	text-transform: uppercase;
+}
+
+h1 a {
+	color: white;
 }
 
 #menu {
@@ -23,17 +27,17 @@ h1 {
 
 #menu ul{
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: space-evenly;
 	padding:0;
-	width: 70%;
+	width: 60%;
 }
 
 .auth-panel ul {
-	width: 30%;
+	width: 100% !important;
 }
 
 .auth-panel ul li {
-	width: 200px;
 	border: 1px solid white;
 	padding: 5px;
 	border-radius: 10px;
@@ -62,8 +66,11 @@ h1 {
 }
 
 #header, #footer {
-	height: 200px;
 	background-color: midnightblue;
+}
+
+#header {
+	padding: 10px;
 }
 
 #container {
@@ -73,11 +80,22 @@ h1 {
 .sidebar {
 	background-color: midnightblue;
 	width: 20%;
-	height:1800px;
 	border-top: 1px solid;
 	border-bottom: 1px solid;
 	padding:10px 10px 10px 30px;
 	color: white;
+}
+
+@media only screen and (max-width: 768px) {
+	width: 25%;
+}
+
+#main-page .sidebar {
+	height:1200px;
+}
+
+#contact-page .sidebar {
+	height:650px;
 }
 
 .sidebar a {
@@ -124,6 +142,7 @@ h1 {
 	width:80%;
 	padding: 10px;
 	margin: auto;
+	border-bottom: 1px solid midnightblue;
 }
 
 .main-box img {
@@ -135,6 +154,7 @@ h1 {
 }
 
 .main-box h2{
+	color: midnightblue;
 	text-align: center;
 }
 
@@ -153,12 +173,13 @@ h1 {
 }
 
 .other-news h2, .pop-news-item h2 {
+	color: midnightblue;
 	text-align: center;
 }
 
 .pop-news {
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: row wrap;
 	justify-content: space-between;
 	width: 100%;
 }
@@ -175,10 +196,6 @@ h1 {
 
 .pop-news-item .read-more {
 	text-align: right;
-}
-
-.main-box, .other-news{
-	border-bottom: 1px solid midnightblue;
 }
 
 #contact-us{

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Newspit - Portal of International News</title>
+		<title>Contact Us | Newspit</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
-	<body id="main-page">
+	<body id="contact-page">
 		<div id="main">
 			<div id="header">
 				<h1><a href="index.html">Newspit</a></h1>
@@ -50,32 +50,36 @@
 					</ul>
 				</div>
 				<div class="outlet">
-					<div class="main-box">
-						<h2>The Hottest News</h2>
-						<img alt="main-page" src="images/image.PNG">
-						<p class="synopsis">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-						<p class="read-more"><a href="">Read more...</a></p>
-					</div>
-					<div class="other-news">
-						<h2>Popular News</h2>
-						<div class="pop-news">
-							<div class="pop-news-item">
-								<h2>Pop News 1</h2>
-								<img alt="pop_news_1" src="images/image.PNG">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-								<p class="read-more"><a href="">Read more...</a></p>
+					<div id="contact-us">
+						<h2>Contact Us</h2>
+						<div class="row">
+							<div class="contact-form">
+								<form action="action.php" method="POST">
+									<div class="form-group">
+										<label for="first-name">First Name</label>
+										<input type="text" id="first-name" name="first-name"/>
+									</div>
+									<div class="form-group">
+										<label for="last-name">Last Name</label>
+										<input type="text" id="last-name" name="last-name"/>
+									</div>
+									<div class="form-group">
+										<label for="email">Email</label>
+										<input type="text" id="email" name="email"/>
+									</div>
+									<div class="form-group">
+										<label for="phone">Phone Number</label>
+										<input type="text" id="phone" name="phone"/>
+									</div>
+									<div class="form-group">
+										<label for="message">Message</label>
+										<textarea name="message" id="message"></textarea>
+									</div>
+									<input type="submit" value="Submit"/>
+								</form>
 							</div>
-							<div class="pop-news-item">
-								<h2>Pop News 2</h2>
-								<img alt="pop_news_2" src="images/image.PNG">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-								<p class="read-more"><a href="">Read more...</a></p>
-							</div>
-							<div class="pop-news-item">
-								<h2>Pop News 3</h2>
-								<img alt="pop_news_2" src="images/image.PNG">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-								<p class="read-more"><a href="">Read more...</a></p>
+							<div class="contact-icon">
+								<img src="images/contact_me.svg"/>
 							</div>
 						</div>
 					</div>
