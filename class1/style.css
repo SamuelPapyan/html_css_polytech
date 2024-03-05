@@ -22,15 +22,18 @@ h1 a {
 #menu {
 	display: flex;
 	justify-content: space-evenly;
-	background-color: midnightblue;
+}
+
+.header-row-1 {
+	width: 80%;
 }
 
 #menu ul{
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-evenly;
-	padding:0;
-	width: 60%;
+	justify-content: space-between;
+	padding:0 20px;
+	width: 100%;
 }
 
 .auth-panel ul {
@@ -65,8 +68,12 @@ h1 a {
 	width:100%;
 }
 
-#header, #footer {
-	background-color: midnightblue;
+#header {
+	background-image: linear-gradient(to top, midnightblue, black);
+}
+
+#footer {
+	background-image: linear-gradient(to top, black, midnightblue);
 }
 
 #header {
@@ -84,18 +91,13 @@ h1 a {
 	border-bottom: 1px solid;
 	padding:10px 10px 10px 30px;
 	color: white;
+	height: inherit;
 }
 
-@media only screen and (max-width: 768px) {
-	width: 25%;
-}
-
-#main-page .sidebar {
-	height:1200px;
-}
-
-#contact-page .sidebar {
-	height:650px;
+@media only screen and (max-width: 874px) {
+	.sidebar {
+		width: 30%;
+	}
 }
 
 .sidebar a {
@@ -147,7 +149,6 @@ h1 a {
 
 .main-box img {
 	width: 75%;
-	height: 400px;
 	margin: auto;
 	display: block;
 	border-radius: 10px;
@@ -167,6 +168,10 @@ h1 a {
 	font-weight: bold;
 }
 
+.read-more a:hover{
+	text-decoration: underline;
+}
+
 .other-news {
 	margin: auto;
 	width: 80%;
@@ -179,7 +184,8 @@ h1 a {
 
 .pop-news {
 	display: flex;
-	flex-flow: row wrap;
+	flex-wrap: wrap;
+	flex-flow: row;
 	justify-content: space-between;
 	width: 100%;
 }
@@ -269,4 +275,89 @@ h1 a {
 .contact-icon img {
 	display: block;
 	width: 50%;
+}
+
+.sublist {
+	position: absolute;
+	top: 25px;
+	display: none;
+	background-color: midnightblue;
+	padding: 10px;
+	box-shadow: 5px 5px 20px black;
+	border-radius: 10%;
+	min-width: 150px;
+
+}
+
+.sublist ul {
+	display: block !important;
+	padding: 0 !important;
+}
+
+.sublist ul li {
+	margin-bottom:10px;
+	font-size:16px !important;
+	text-align: left !important;
+	display: list-item !important;
+	width:100%;
+}
+
+.dropdown {
+	position: relative;
+	display:inline-block;
+}
+
+.dropdown:hover .sublist{
+	display: block;
+}
+
+#menu a {
+	transition-duration:  0.5s;
+}
+
+#menu a:hover{
+	color: midnightblue;
+	background-color: white;
+	border-radius: 10px;
+	padding:2px;
+	transition-duration:  0.5s;
+}
+
+#search-form {
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#search-article {
+	width:88%;
+	font-size:20px;
+	border-radius: 10px;
+	text-indent: 20px;
+}
+
+#search-form input[type="submit"] {
+	border: 1px solid white;
+	background-color: midnightblue;
+	color: white;
+	font-size: 1.5em;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#search-form input[type="submit"]:hover, .auth-panel ul li:hover{
+	transition-duration: 0.5s;
+	border: 1px solid midnightblue;
+	background-color: white;
+	color: midnightblue;
+}
+
+.sublist ul li a {
+	display: block;
+	width: 100%;
+}
+
+.sublist ul li a:hover{
+	transition-duration: 0.5s;
+	background-color: white;
 }

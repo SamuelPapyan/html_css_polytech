@@ -10,13 +10,32 @@
 			<div id="header">
 				<h1><a href="index.html">Newspit</a></h1>
 				<div id="menu">
-					<ul>
-						<li><a href="#">Community</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="contactus.html">Contact Us</a></li>
-						<li><a href="#">Articles</a></li>
-						<li><a href="#">More</a></li>
-					</ul>
+					<div class="header-row-1">
+						<ul>
+							<li><a href="#">Community</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="contactus.html">Contact Us</a></li>
+							<div class="dropdown">
+								<li><a href="#">Articles</a></li>
+								<div class="sublist">
+									<ul>
+										<li><a href="#">Financial</a></li>
+										<li><a href="#">Sport</a></li>
+										<li><a href="#">IT</a></li>
+										<li><a href="#">Popular</a></li>
+										<li><a href="#">Hot</a></li>
+										<li><a href="#">Recent</a></li>
+									</ul>
+								</div>
+							</div>
+							<li><a href="#">More</a></li>
+						</ul>
+						<form id="search-form" action="search.php" method="post">
+							<input type="text" name="search-query" id="search-article" placeholder="Search for articles"/>
+							<input type="submit" value="Search"/>
+						</form>
+					</div>
+					
 					<div class="auth-panel">
 						<ul>
 							<li><a href="#">Sign Up</a></li>
@@ -24,9 +43,16 @@
 						</ul>
 					</div>
 				</div>
+
 			</div>
 			<div id="container">
 				<div class="sidebar">
+					<h2>Categories</h2>
+					<ul>
+						<li><a href="#">Financial</a></li>
+						<li><a href="#">IT</a></li>
+						<li><a href="#">Sport</a></li>
+					</ul>
 					<h2>Recently News</h2>
 					<ul>
 						<li><a href="#">News 1</a></li>
@@ -103,6 +129,10 @@
 						<li><a href="#">Contact Us</a></li>
 						<li><a href="tel:+37491123456">+374 91 123456</a></li>
 						<li><a href="tel:+37493123456">+374 93 123456</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms of Use</a></li>
 					</ul>
 				</div>
 				<h3>Samvel Papyan &copy; NPUA 2024</h3>
